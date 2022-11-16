@@ -1,1 +1,1 @@
-sudo docker-compose -f stf/devices.yml up -d --build
+sudo docker-compose -f appium_android/docker-compose.yml up -d --build
