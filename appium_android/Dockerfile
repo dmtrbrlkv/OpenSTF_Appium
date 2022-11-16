@@ -1,4 +1,4 @@
-FROM appium/appium:1.19.1-p0
+FROM appium/appium:1.11.1-p1
 #FROM ubuntu:18.04
 
 #ENV DEBIAN_FRONTEND=noninteractive
