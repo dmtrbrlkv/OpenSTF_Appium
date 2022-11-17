@@ -1,6 +1,5 @@
-#!/usr/bin/env bash
-!/bin/bash
-#ANDROID_DEVICES="011f6a709805"
+#!/bin/bash
+
 if [ ! -z "$ANDROID_DEVICES" ]; then
     curl -X POST \
       http://$PUBLIC_IP/api/v1/user/devices \
@@ -14,5 +13,4 @@ if [ ! -z "$ANDROID_DEVICES" ]; then
     adb connect ${connect_url}
     echo "Success!"
     sleep 1
-    adb devices
 fi

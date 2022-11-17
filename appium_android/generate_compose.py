@@ -45,6 +45,7 @@ device_template = """
       - ANDROID_DEVICES={udid}
       - REMOTE_ADB_POLLING_SEC=60
       - RELAXED_SECURITY=true
+      - APPIUM=true
 """
 port = 4723
 for device in devices['devices']:
