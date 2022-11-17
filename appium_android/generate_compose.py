@@ -56,3 +56,5 @@ for device in devices['devices']:
 
 with open(folder + '/docker-compose.yml', mode='w') as f:
     f.write(docker_compose)
+
+print(docker_compose)
