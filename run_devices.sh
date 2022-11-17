@@ -1,5 +1,2 @@
-cd appium_android
-docker build . -f gen_compose.Dockerfile -t gen_image
-docker run --env-file ../.env gen_image > docker-compose.yml
-cd ..
+docker run --env-file ../.env dmtrbrlkv/gen_devices_compose > appium_android/docker-compose.yml
 sudo docker-compose -f appium_android/docker-compose.yml up -d --build --remove-orphans
