@@ -26,8 +26,7 @@ services:
 
 device_template = """
   device_{udid}:
-    build:
-      context: .
+    image: dmtrbrlkv/appium_android:1
     restart: unless-stopped
     depends_on:
       - selenium_hub
