@@ -9,6 +9,7 @@ if [ ! -z "$ANDROID_DEVICES" ]; then
     response=$(curl -s -X GET   http://$PUBLIC_IP/api/v1/devices/$ANDROID_DEVICES   -H 'Authorization: Bearer '"$STF_TOKEN")
     echo $response
     connect_url=$( jq -r .device.remoteConnectUrl <<< "${response}" )
+    connect_url=${connect_url//":6080"/"$second"}
     echo ${connect_url}
     adb connect ${connect_url}
     echo "Success!"
